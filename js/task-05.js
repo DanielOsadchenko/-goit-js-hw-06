@@ -5,4 +5,8 @@ inputRef.addEventListener('input', OnInputChange);
 
 function OnInputChange(event) {
   outputRef.textContent = event.currentTarget.value;
+
+  if (event.currentTarget.value === '') {
+    outputRef.textContent = 'Anonymoys';
+  }
 }
